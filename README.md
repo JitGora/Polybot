@@ -1,6 +1,14 @@
-# polymarket_terminal.py
+# Polymarket Terminal Console (BTC UP/DOWN 15m)
 
-Real-time **BTC 15m Polymarket decision terminal**: aggregates Binance spot/futures, Polymarket RTDS (relay + Chainlink), Gamma metadata, and CLOB orderbooks; computes multi-model fair values (oracle/time-weighted/market-sum/combined/futures/order-flow), runs 6 strategy evaluators, builds consensus (`WAIT` / `WEAK BUY` / `BUY` / `STRONG BUY`), and renders a live Rich dashboard with event timer, strike, feed lag, spreads, edges, confidence bars, and strategy reasons.
+- Real-time **terminal/console for Polymarket** market monitoring and signal viewing.
+
+- Auto-detects the current **BTC UP/DOWN 15-minute slug**.
+- Auto-sets the **strike (price to beat)** at the start of each new 15m window.
+- Streams live prices from **Polymarket** and **Binance** via WebSocket.
+- Streams the live **Polymarket order book** for UP and DOWN tokens.
+- Compares feeds to find potential **edge opportunities** when prices look mispriced.
+- Combines multiple methods into one signal: `WAIT`, `WEAK BUY`, `BUY`, `STRONG BUY`.
+- Updates in real time with time left, strike, odds, spreads, gaps, confidence, and strategy agreement.
 ![alt text](image-1.png)
 ## Run
 ```bash

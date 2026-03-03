@@ -1,14 +1,12 @@
-# Polymarket Terminal Console (BTC UP/DOWN 15m)
 
-- Real-time **terminal/console for Polymarket** market monitoring and signal viewing.
+## Features
+- Real-time terminal for Polymarket monitoring
+- Auto-detects BTC UP/DOWN 15m slug and strike price
+- Live price streams from Polymarket and Binance (WebSocket)
+- Order book monitoring for UP/DOWN tokens
+- Mispricing detection and signal generation (`WAIT`, `WEAK BUY`, `BUY`, `STRONG BUY`)
+- Real-time updates: time left, odds, spreads, confidence
 
-- Auto-detects the current **BTC UP/DOWN 15-minute slug**.
-- Auto-sets the **strike (price to beat)** at the start of each new 15m window.
-- Streams live prices from **Polymarket** and **Binance** via WebSocket.
-- Streams the live **Polymarket order book** for UP and DOWN tokens.
-- Compares feeds to find potential **edge opportunities** when prices look mispriced.
-- Combines multiple methods into one signal: `WAIT`, `WEAK BUY`, `BUY`, `STRONG BUY`.
-- Updates in real time with time left, strike, odds, spreads, gaps, confidence, and strategy agreement.
 ![alt text](image-1.png)
 ## Run
 ```bash

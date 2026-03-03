@@ -1,7 +1,7 @@
 # polymarket_terminal.py
 
 Real-time **BTC 15m Polymarket decision terminal**: aggregates Binance spot/futures, Polymarket RTDS (relay + Chainlink), Gamma metadata, and CLOB orderbooks; computes multi-model fair values (oracle/time-weighted/market-sum/combined/futures/order-flow), runs 6 strategy evaluators, builds consensus (`WAIT` / `WEAK BUY` / `BUY` / `STRONG BUY`), and renders a live Rich dashboard with event timer, strike, feed lag, spreads, edges, confidence bars, and strategy reasons.
-
+![alt text](image-1.png)
 ## Run
 ```bash
 python3 polymarket_terminal.py

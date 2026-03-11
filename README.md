@@ -15,7 +15,7 @@ python3 polymarket_terminal.py
 
 ## Dependencies
 ```bash
-pip install websockets requests rich numpy
+pip install -r requirements.txt
 ```
 
 ## Data endpoints used
